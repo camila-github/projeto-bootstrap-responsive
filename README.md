@@ -32,5 +32,3 @@
 
 ![Video](https://github.com/camila-github/projeto-bootstrap-responsive/blob/main/docs/video1.gif)
 
-
-![Video](https://github.com/camila-github/projeto-bootstrap-responsive/blob/main/docs/video2.gif)
