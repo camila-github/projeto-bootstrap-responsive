@@ -17,7 +17,7 @@
   [https://getbootstrap.com.br/](https://getbootstrap.com.br/)
 
 - CSS3
-- 
+
   [https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox](https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)
 
 
@@ -30,7 +30,7 @@
   [https://fontawesome.com/](https://fontawesome.com/)
 
 - Referencia para o projeto:
-- 
+
   [https://web.archive.org/web/20210120125445/https://www.newsweek.com/](https://web.archive.org/web/20210120125445/https://www.newsweek.com/)
 
 ## Site publicado no link abaixo:
