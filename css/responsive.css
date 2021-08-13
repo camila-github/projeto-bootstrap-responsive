@@ -1,0 +1,167 @@
+@media(max-width: 1196px) {
+
+  main {
+    padding: 20px 0px 20px 0px;    
+  }
+
+  .content-3{
+    width: 992px;
+    align-content: center;
+  }
+
+  .smm__container {
+    padding: 10px 0;
+  }  
+
+  .smm__collapse {
+    display: block;
+    flex-grow: 0;
+    padding-left: 0;
+  }
+
+  .smm__logo-wrapper a{
+    font-size: 16px;
+  }
+
+  .smm__logo-wrapper {
+    margin-bottom: 15px;
+    text-align: center;   
+  }
+
+  .smm__primary-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  ul.smm__primary-menu {
+    margin-bottom: 30px;
+  }
+
+  .smm__primary-menu li > a {
+    padding: 10px 12px;
+  }
+
+  .smm__secondary-menu {
+    text-align: center;
+  } 
+
+  .p2{
+    width: 992px;
+  }
+
+  .news-container {
+    width: 100%;
+  }
+
+  .mb-2 {
+    align-items: center;
+  }
+
+  .footer-menu{
+    flex-direction: row;
+    padding: 0;
+    align-items: center;
+  }
+
+  .footer_m .nav-r-line{
+    border: 0px;
+  }
+
+  .footer_m{
+    position: absolute;  
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0px 0px 25px;
+    align-items: center;
+    margin: 15px 0 0 0;      
+  }
+
+  .footer__container{
+    margin-right: 160px;
+    justify-content: center;
+  }
+
+  .openbtn {
+  display: block; 
+  }
+
+  .sidebar {
+    height: 50%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 99;
+    border-bottom-right-radius: 30% ;
+    box-shadow: 0 5px 15px rgba(222, 15, 230, 0.5);
+    
+  }
+  
+  .sidebar a, .sidebar ul li a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #000;
+    display: block;
+    transition: 0.3s;
+    justify-content: space-around;
+  }
+  
+  .sidebar a:hover {
+    color: #882878;
+    border-color: #882878;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 50px;
+    margin-top: 10px;  
+    
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #fff;
+    color: #882878;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #fff;
+  }
+  
+  #btn__main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+}
+
+@media only screen and (min-width: 996px) and (max-width: 1115px) {
+    .nav__second ul li a{
+      font-size: 13px;
+    }   
+  }
+
+  @media only screen and (max-width: 995px) {   
+    #row__news{
+      margin-top: 120px;
+    }
+  }
+
+  @media only screen and (max-width: 579px) {   
+    #row__news{
+      margin-top: 150px;
+    }
+}

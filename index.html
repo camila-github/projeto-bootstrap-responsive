@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/responsive.css">    
+    
+    <title>Noticias da Semana</title>
+  </head>
+  <body>
+    <!--header - menu - start-->
+    <header>
+      <nav>              
+        <div class="container-fluid red d-flex justify-content-between">
+          <div class="smm">
+          <div class="container">
+            <div class="smm__container js-smm-container">
+              <h4 class="smm__logo-wrapper">   
+                <p id="date"></p>  
+                <a href="#">
+                  <img src="./img/logo.gif" alt="Logo" width="80" height="70"> 
+                  Noticias da Semana
+                </a>                
+              </h4>
+
+              <div id="btn__main">
+                <button class="smm__toggle js-smm-toggle visible-xs-block visible-sm-block openbtn" onclick="openNav()">
+                  <i class="fa fa-bars"></i>
+                </button>
+              </div>
+                        
+              <nav class="smm__collapse sidebar" id="mySidebar" >
+                <a href="#" class="closebtn" onclick="closeNav()">×</a>
+                <ul class="smm__primary-menu">
+                  <li><a href="#"><i class="fa fa-home"></i>Inicio</a></li>
+                  <li><a href="#"><i class="fas fa-users"></i> Sobre nós</a></li>
+                  <li><a href="#"><i class="fa fa-cogs"></i> Serviço</a></li>                  
+                  <li><a href="#"><i class="fa fa-envelope"></i>Contato</a></li>
+                </ul>
+                <ul class="smm__secondary-menu">
+                  <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                  <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="#" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+              </nav>    
+            </div>
+          </div>
+        </div>   
+
+        <div class="nav__second bld-flex fixed-top container-fluid d-none d-sm-none d-lg-block">
+          <ul class="list-unstyled fw-bold d-flex justify-content-center">
+            <li><a class="nav__list-second text-dark text-decoration-none nav-r-line" href="#">Mundo</a></li>
+            <li><a class="nav__list-second text-dark text-decoration-none nav-r-line" href="#">Negócios</a></li>
+            <li><a class="nav__list-second text-dark text-decoration-none nav-r-line" href="#">Tecnologia e Ciência</a></li>
+            <li><a class="nav__list-second text-dark text-decoration-none nav-r-line" href="#">Cultura</a></li>
+            <li><a class="nav__list-second text-dark text-decoration-none nav-r-line" href="#">Esportes</a></li>
+            <li><a class="nav__list-second text-dark text-decoration-none nav-r-line" href="#">Saúde</a></li>
+            <li><a class="nav__list-second text-dark text-decoration-none nav-r-line" href="#">Debates</a></li> 
+            <li><a class="nav__list-second text-dark text-decoration-none nav-r-line" href="#">Política</a></li>
+            <li><a class="nav__list-second text-dark text-decoration-none nav-r-line" href="#">Culinária</a></li> 
+            <li><a class="nav__list-second text-dark text-decoration-none nav-r-line" href="#">Econômia</a></li>
+            <li><a class="nav__list-second text-dark text-decoration-none nav-r-line" href="#">Coronavirus</a></li> 
+
+            <li>
+              <div class="s-icon d-flex">
+                <p class="text-secondary fw-lighter">Busca</p>
+                <i class="fas fa-search m-1"></i>
+              </div>
+            </li>
+          </ul>
+        </div>       
+      </nav>
+    </header><!--header - menu - end-->
+
+    <main class="container-fluid mt-xs-none mt-sm-5 mt-lg-0">
+
+      <!--news - smaller screen - start -->
+      <div class="row" id="row__news">
+        <div class="p-2 mb-2 d-sm-block d-md-none">
+          <div>
+            <h6 class="text-secondary">Principais Noticias</h6>
+            <div class="img-box">
+              <a href="#" ><img class="feat-img" src="./img/news1.jpeg" alt=""/></a>
+              <div class="bottom-left">
+                <p><a class="fw-bold text-decoration-none bg-grey p-2" href="#">Política</a></p>
+              </div>
+            </div>
+            <div class="img-text">
+              <h5><a class="fw-bold text-decoration-none text-dark" href="#">The standard Lorem Ipsum passage, used since the 1500s.</a></h5>
+              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p><br>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-2 col-lg-4 col-md-6 col-sm-12 content-1">
+          <div class="p-2 mb-2" id="featured-stories">
+            <div>
+              <h6 class="text-secondary">Histórias Destacadas</h6>
+              <div class="img-box">
+                <a href="#"><img class="feat-img" src="./img/news2.jpeg" alt=""/></a>
+                <div class="bottom-left">
+                  <p><a class="fw-bold text-decoration-none bg-grey p-2" href="#">Mundo</a></p>
+                </div>
+              </div>
+              <div class="img-text">
+                <h5><a class="fw-bold text-decoration-none text-dark" href="#">Section 1.10.32 of "de Finibus Bonorum et Malorum".</a></h5>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem 
+                  aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores 
+                  eos qui ratione voluptatem sequi nesciunt.
+                </p><br>
+              </div>
+            </div>
+
+            <div>
+              <div class="img-box">
+                <a href="#"><img class="feat-img" src="./img/news3.jpeg" alt=""/></a>
+                <div class="bottom-left">
+                  <p><a class="fw-bold text-decoration-none bg-grey p-2" href="#">Tecnologia e Ciência</a></p>
+                </div>
+              </div>
+              <div class="img-text">
+                <h5><a class="fw-bold text-decoration-none text-dark" href="#">The standard Lorem Ipsum passage, used since the 1500s.</a></h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                  magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                  consequat.
+                </p><br>
+              </div>
+            </div>
+
+            <div>
+              <div class="img-box">
+                <a href="#"><img class="feat-img" src="./img/news4.jpeg" alt=""/></a>
+                <div class="bottom-left">
+                  <p><a class="fw-bold text-decoration-none bg-grey p-2" href="#">Saúde</a></p>
+                </div>
+              </div>
+              <div class="img-text">
+                <h5><a class="fw-bold text-decoration-none text-dark" href="#">1914 translation by H. Rackham</a></h5>
+                <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising 
+                  pain was born and I will give you a complete account of the system, and expound the actual 
+                  teachings of the great explorer of the truth, the master-builder of human happiness.
+                </p><br>
+              </div>
+            </div>
+
+            <div>
+              <div class="img-box">
+                <a href="#"><img class="feat-img" src="./img/news5.jpeg" alt=""/></a>
+                <div class="bottom-left">
+                  <p><a class="fw-bold text-decoration-none bg-grey p-2" href="#">Especialistas</a></p>
+                </div>
+              </div>
+              <div class="img-text">
+                <h5><a class="fw-bold text-decoration-none text-dark" href="#">Section 1.10.32 of "de Finibus Bonorum et Malorum".</a></h5>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem 
+                  aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+                </p><br>
+              </div>
+            </div>
+
+            <div>
+              <div class="img-box">
+                <a href="#"><img class="feat-img" src="./img/news6.jpeg" alt=""/></a>
+                <div class="bottom-left">
+                  <p><a class="fw-bold text-decoration-none bg-grey p-2" href="#">Cultura</a></p>
+                </div>
+              </div>
+              <div class="img-text">
+                <h5><a class="fw-bold text-decoration-none text-dark" href="#">1914 translation by H. Rackham</a></h5>
+                <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and 
+                  demoralized by the charms of pleasure of the moment, so blinded by desire.
+                </p><br>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="p-2 mb-2" id="sponsored-insights-1">
+            <div>
+              <div>
+                <div class="img-box">
+                  <a href="#"><img class="feat-img" src="./img/sponsorship1.jpg" alt=""/></a>
+                  <div class="bottom-left nowrap">
+                    <p class="bottom-left text-primary fw-bold bg-grey p-2">Publicidade</p>
+                  </div>
+                </div>
+                <div class="img-text">
+                  <h5><a class="fw-bold text-decoration-none text-dark" href="#">Where does it come from?</a></h5>
+                  <p>Contrary to popular belief, Lorem Ipsum is not simply random text. 
+                    It has roots in a piece of classical Latin literature from 45 BC, making it over 
+                    2000 years old.
+                  </p><br>
+                </div>
+              </div> 
+
+              <div>
+                <div class="img-box">
+                  <a href="#"><img class="feat-img" src="./img/sponsorship2.jpg" alt=""/></a>
+                  <div class="bottom-left nowrap">
+                    <p class="bottom-left text-primary fw-bold bg-grey p-2">Publicidade</p>
+                  </div>
+                </div>
+                <div class="img-text">
+                  <h5><a class="fw-bold text-decoration-none text-dark" href="#">Where does it come from?</a></h5>
+                  <p>
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. 
+                    It has roots in a piece of classical Latin literature from 45 BC, making it over 
+                    2000 years old.
+                  </p><br>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="p-2 col-lg-4 col-md-6 col-sm-12 content-2">
+          <div class="p-2 mb-2 d-sm-none d-md-block" id="top-story">
+            <div>
+              <h6 class="text-secondary">Principais Noticias</h6>
+              <div class="img-box">
+                <a href="#"><img class="feat-img" src="./img/news1.jpeg" alt=""/></a>
+                <div class="bottom-left">
+                  <p><a class="fw-bold text-decoration-none bg-grey p-2" href="#">Política</a></p>
+                </div>
+              </div>
+              <div class="img-text">
+                <h5>
+                  <a class="fw-bold text-decoration-none text-dark" href="#">
+                    The standard Lorem Ipsum passage, used since the 1500s.
+                  </a>
+                </h5>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                  ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                  ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p><br>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="p-2 mb-2" id="my-turn">
+            <section>
+              <h6 class="text-secondary">Minha História</h6>
+              <div>
+                <div class="d-md-flex justify-n">
+                  <div>
+                    <a href="#" class="text-decoration-none">
+                      <div class="img-box"><img class="l-img" src="./img/my-story1.jpg" alt="" /></div>
+                      <br><p class="fw-bold">'Loren Ipsum, temporibus autem.'</p><br>
+                    </a>
+                  </div>
+                  <div>
+                    <a href="#" class="text-decoration-none">
+                      <div class="img-box"><img class="l-img" src="./img/my-story2.jpeg" alt="" /></div>
+                      <br><p class="fw-bold">'Loren Ipsum, temporibus autem.'</p><br>
+                    </a>
+                  </div>
+                  <div>
+                    <a href="#" class="text-decoration-none">
+                      <div class="img-box"><img class="l-img" src="./img/my-story3.jpeg" alt="" /></div>
+                      <br><p class="fw-bold">'Loren Ipsum, temporibus autem.'</p><br>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <div class="p-2 mb-2" id="culture">            
+            <section>
+              <h6 class="text-secondary">Cultura e Viagens</h6>
+              <div class="d-md-flex justify-n">
+                <div>
+                  <a href="#" class="text-decoration-none">
+                    <div class="img-box">
+                      <img class="l-img" src="./img/culture1.jpeg" alt="" />
+                      <div class="bottom-left">
+                        <p class="bottom-left text-dark fw-bold bg-light-sky">Musica</p>                        
+                      </div>
+                    </div>
+                    <p class="fw-bold m-2">'Loren Ipsum, In a free hour, when our power.'</p>
+                  </a>
+                </div>
+                <div>
+                  <a href="#" class="text-decoration-none">
+                    <div class="img-box">
+                      <img class="l-img" src="./img/culture2.jpeg" alt="" />
+                      <div class="bottom-left">
+                        <p class="bottom-left text-dark fw-bold bg-light-sky">Cultura</p>
+                      </div>
+                    </div>
+                    <p class="fw-bold m-2">'Loren Ipsum, In a free hour, when our power.'</p>
+                  </a>
+                </div>
+                <div>
+                  <a href="#" class="text-decoration-none">
+                    <div class="img-box">
+                      <img class="l-img" src="./img/culture3.jpeg" alt="" />
+                      <div class="bottom-left">
+                        <p class="bottom-left text-dark fw-bold bg-light-sky">Viagens</p>
+                      </div>
+                    </div>
+                    <p class="fw-bold m-2">'Loren Ipsum, In a free hour, when our power.'</p>
+                  </a>
+                </div>
+              </div>
+            </section>
+          </div>
+          
+          <div class="p-2 mb-2" id="more-stories">
+            <section>
+              <h6 class="text-secondary">Mais Noticias</h6>
+              <div>
+                <div class="story-container">
+                  <a href="#"><img class="space-r s-img float-start" src="./img/more1.jpg" alt=""/></a>
+                  <div>
+                    <h6><a class="fw-bold text-decoration-none text-dark" href="#">The standard Lorem Ipsum</a></h6>
+                    <p class="fs-7"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                      nisi ut aliquip ex ea commodo consequat. 
+                    </p>
+                  </div>
+                </div>
+
+                <div class="story-container">
+                  <a href="#"><img class="space-r s-img float-start" src="./img/more2.jpg" alt=""/></a>
+                  <div>
+                    <h6><a class="fw-bold text-decoration-none text-dark" href="#">Section 1.10.32 of "de Finibus Bonorum et Malorum".</a></h6>
+                    <p class="fs-7"> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+                      totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo
+                    </p>
+                  </div>
+                </div>
+
+                <div class="story-container">
+                  <a href="#"><img class="space-r s-img float-start" src="./img/more3.jpg" alt=""/></a>
+                  <div>
+                    <h6><a class="fw-bold text-decoration-none text-dark" href="#">Translation by H. Rackham</a></h6>
+                    <p class="fs-7"> But I must explain to you how all this mistaken idea of denouncing pleasure and praising 
+                      pain was born and I will give you a complete account of the system,
+                    </p>
+                  </div>
+                </div>
+
+                <div class="story-container">
+                  <a href="#"><img class="space-r s-img float-start" src="./img/more4.jpg" alt=""/></a>
+                  <div>
+                    <h6><a class="fw-bold text-decoration-none text-dark" href="#">The standard Lorem Ipsum passage</a></h6>
+                    <p class="fs-7"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                      aliquip ex ea commodo consequat.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="story-container">
+                  <a href="#"><img class="space-r s-img float-start" src="./img/more5.jpg" alt=""/></a>
+                  <div>
+                    <h6><a class="fw-bold text-decoration-none text-dark" href="#">Section 1.10.32 of "de Finibus Bonorum et Malorum".</a></h6>
+                    <p class="fs-7"> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+                      totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae 
+                      vitae dicta sunt explicabo
+                    </p>
+                  </div>
+                </div>
+
+                <div class="story-container">
+                  <a href="#"><img class="space-r s-img float-start" src="./img/more6.jpg" alt=""/></a>
+                  <div>
+                    <h6><a class="fw-bold text-decoration-none text-dark" href="#">Translation by H. Rackham</a></h6>
+                    <p class="fs-7"> But I must explain to you how all this mistaken idea of denouncing pleasure and 
+                      praising pain was born and I will give you a complete account of the system.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="story-container">
+                  <a href="#"><img class="space-r s-img float-start" src="./img/more7.jpg" alt=""/></a>
+                  <div>
+                    <h6><a class="fw-bold text-decoration-none text-dark" href="#"> The standard Lorem Ipsum passage, used since the 1500s</a></h6>
+                    <p class="fs-7"> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
+                      officia deserunt mollit anim id est laborum.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="story-container">
+                  <a href="#"><img class="space-r s-img float-start" src="./img/more8.jpg" alt=""/></a>
+                  <div>
+                    <h6><a class="fw-bold text-decoration-none text-dark" href="#"> Finibus Bonorum et Malorum", written by Cicero in 45 BC</a></h6>
+                    <p class="fs-7"> Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam 
+                      nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur."
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <div class="p-2 mb-2" id="latest-news">
+            <section>
+              <h6 class="text-secondary">Últimas Notícias</h6>
+              <div>
+                <div class="news-container">
+                  <a href="#"><img class="space-r s-img float-start" src="./img/latest1.jpg" alt=""/></a>
+                  <div>
+                    <h6><a class="fw-bold text-decoration-none text-dark" href="#">Finibus Bonorum et Malorum</a></h6>
+                    <p class="fs-7">At vero eos et accusamus et iusto odio lorum fuga...</p>
+                  </div>
+                </div>
+
+                <div class="news-container">
+                  <a href="#"><img class="space-r s-img float-start" src="./img/latest2.jpg" alt=""/></a>
+                  <div>
+                    <h6><a class="fw-bold text-decoration-none text-dark" href="#">On the other hand.</a></h6>
+                    <p class="fs-7">The wise man therefore always holds in these matters...</p>
+                  </div>
+                </div>
+
+                <div class="news-container">
+                  <a href="#"><img class="space-r s-img float-start" src="./img/latest3.jpg" alt=""/></a>
+                  <div>
+                    <h6><a class="fw-bold text-decoration-none text-dark" href="#">Where can I get some?</a></h6>
+                    <p class="fs-7">It uses a dictionary of over 200 Latin words...</p>
+                  </div>
+                </div>
+
+                <div class="news-container">
+                  <a href="#"><img class="space-r s-img float-start" src="./img/latest4.jpg" alt=""/></a>
+                  <div>
+                    <h6><a class="fw-bold text-decoration-none text-dark" href="#">1914 translation by H. Rackham</a></h6>
+                    <p class="fs-7">But I must explain to you how all this...</p>
+                  </div>
+                </div>
+
+                <div class="news-container">
+                  <a href="#"><img class="space-r s-img float-start" src="./img/latest5.jpg" alt=""/></a>
+                  <div>
+                    <h6><a class="fw-bold text-decoration-none text-dark" href="#">The standard Lorem Ipsum passage</a></h6>
+                    <p class="fs-7">Duis aute irure dolor in reprehenderit...</p>
+                  </div>
+                </div>                
+              </div>
+            </section>
+          </div>
+
+        </div>
+
+        <div class="p-2 col-lg-4 col-md-6 col-sm-12 content-3">
+          <div class="p-2 mb-2" id="the-debate">
+            <section>
+              <h6 class="text-secondary">Debate</h6>
+              <div>
+                <div class="debate-section p-3">
+                  <div class="d-flex">
+                    <a href="#"><img class="s-r-img rounded-circle" src="./img/face-lorem.jpeg" alt=""/></a>
+                    <div>
+                      <h6><a class="text-decoration-none text-dark fw-bold" href="#">Section 1.10.32 of de Finibus Bonorum.</a></h6>
+                      <p>por <span><a class="fw-bold fs-7 text-muted text-decoration-none" href="#">Lorem</a></span></p>
+                    </div>
+                  </div>
+
+                  <div><div class="vs p-1">vs</div></div>
+
+                  <div class="d-flex justify-content-end">
+                    <div>
+                      <h6><a class="text-decoration-none text-dark fw-bold" href="#">Nunc risus leo, eleifend nec elit.</a></h6>
+                      <p>por <span><a class="fw-bold fs-7 text-muted text-decoration-none" href="#">Rachel</a></span></p>
+                    </div>
+                    <div>
+                      <a href="#"><img class="s-r-img rounded-circle" src="./img/face-rachel.jpeg" alt=""/></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <div class="p-2 mb-2" id="opinion">
+            <section class="opinion-section">
+              <h6 class="text-secondary">Opinião</h6>
+              <div>
+                <div class="d-flex p-2">
+                  <a href="#"><img class="s-r-img rounded-circle" src="./img/face-philip.jpeg" alt=""/></a>
+                  <div>
+                    <h6><a class="fw-bold text-decoration-none text-dark" href="#">Lorem ipsum dolor sit amet.</a></h6>
+                    <p>por <span><a class="fw-bold text-muted text-decoration-none" href="#">Philip</a></span></p>
+                  </div>
+                </div>
+                <div class="d-flex p-2">
+                  <a href="#"><img class="s-r-img rounded-circle" src="./img/face-jeferson.jpeg" alt=""/></a>
+                  <div>
+                    <h6><a class="fw-bold text-decoration-none text-dark" href="#">Duis aute irure dolor.</a></h6>
+                    <p>por <span><a class="fw-bold text-muted text-decoration-none" href="#">Jeferson</a></span></p>
+                  </div>
+                </div>
+                <div class="d-flex p-2">
+                  <a href="#"><img class="s-r-img rounded-circle" src="./img/face-carolina.jpeg" alt=""/></a>
+                  <div>
+                    <h6><a class="fw-bold text-decoration-none text-dark" href="#">Ut enim ad minima veniam.</a></h6>
+                    <p>por <span><a class="fw-bold text-muted text-decoration-none" href="#">Carolina</a></span></p>
+                  </div>
+                </div>
+                <div class="d-flex p-2">
+                  <a href="#"><img class="s-r-img rounded-circle" src="./img/face-andre.jpeg" alt=""/></a>
+                  <div>
+                    <h6><a class="fw-bold text-decoration-none text-dark" href="#">Sed ut perspiciatis unde omnis.</a></h6>
+                    <p>por <span><a class="fw-bold text-muted text-decoration-none" href="#">Andre</a></span></p>
+                  </div>
+                </div>
+                <div class="d-flex p-2">
+                  <a href="#"><img class="s-r-img rounded-circle" src="./img/face-zoe.jpeg" alt=""/></a>
+                  <div>
+                    <h6><a class="fw-bold text-decoration-none text-dark" href="#">Quis autem vel eum iure reprehenderit.</a></h6>
+                    <p>por <span><a class="fw-bold text-muted text-decoration-none" href="#">Zoe</a></span></p>
+                  </div>
+                </div>
+                <div class="d-flex p-2">
+                  <a href="#"><img class="s-r-img rounded-circle" src="./img/face-solange.jpeg" alt=""/></a>
+                  <div>
+                    <h6><a class="fw-bold text-decoration-none text-dark" href="#">Lorem ipsum dolor sit amet.</a></h6>
+                    <p>por <span><a class="fw-bold text-muted text-decoration-none" href="#">Solange</a></span></p>
+                  </div>
+                </div>                
+              </div>
+            </section>
+          </div>
+
+          <div class="p-2 mb-2" id="sponsored-insights-2">
+            <section>
+              <div>
+                <div class="insight-box">
+                  <div class="img-box">
+                    <a href="#"><img class="insight2-img" src="./img/sponsorship3.jpg" alt=""/></a>
+                    <div class="bottom-left nowrap">
+                      <p class="bottom-left text-primary fw-bold bg-grey p-2">Publicidade</p>
+                    </div>
+                  </div>
+                  <div class="img-text">
+                    <h5>
+                      <a class="fw-bold text-decoration-none text-dark" href="#">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </a>
+                    </h5>
+                    <p>It is a long established fact that a reader will be distracted by the 
+                      readable content of a page when looking at its layout.                      
+                    </p>
+                  </div>
+                </div>    
+
+                <!-- form section -->
+                <div class="p-2 mb-2" id="signup">
+                  <div class="insight-box form-box container-fluid bg-grey p-4">
+                    <div class="d-flex">
+                      <img class="n-icon" src="./img/logo.gif" alt=""/>
+                      <h6 class="fw-bold">Comece o seu dia com dos nossos <br/> 5 principais artigos.</h6>
+                    </div>
+                    <input type="text" placeholder="E-mail"/>
+                    <br/>
+                    <button class="red m-2 p-2 border-light btn btn-dark" type="submit">
+                      Inscrição Gratuita
+                    </button>
+                  </div>
+                </div> <!-- form section - end -->
+                
+              
+                <div class="insight-box">
+                  <div class="img-box">
+                    <a href="#"><img class="insight2-img" src="./img/sponsorship4.jpg" alt=""/></a>
+                    <div class="bottom-left nowrap">
+                      <p class="bottom-left text-primary fw-bold bg-grey p-2">Publicidade</p>
+                    </div>
+                  </div>
+                  <div class="img-text">
+                    <h5>
+                      <a class="fw-bold text-decoration-none text-dark" href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+                    </h5>
+                    <p>It is a long established fact that a reader will be distracted by the 
+                      readable content of a page when looking at its layout.                      
+                    </p>
+                  </div>
+                </div>
+                            
+                <div class="insight-box">
+                  <div class="img-box">
+                    <a href="#"><img class="insight2-img" src="./img/sponsorship5.jpg" alt=""/></a>
+                    <div class="bottom-left nowrap">
+                      <p class="bottom-left text-primary fw-bold bg-grey p-2">Publicidade</p>
+                    </div>
+                  </div>                  
+                  <div class="img-text">
+                    <h5>
+                      <a class="fw-bold text-decoration-none text-dark" href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+                    </h5>
+                    <p>It is a long established fact that a reader will be distracted by the 
+                      readable content of a page when looking at its layout.                      
+                    </p>
+                  </div>
+                </div>
+
+                <div class="insight-box">
+                  <div class="img-box">
+                    <a href="#"><img class="insight2-img" src="./img/sponsorship6.jpg" alt=""/></a>
+                    <div class="bottom-left nowrap">
+                      <p class="bottom-left text-primary fw-bold bg-grey p-2">Publicidade</p>
+                    </div>
+                  </div>
+                  <div class="img-text">
+                    <h5>
+                      <a class="fw-bold text-decoration-none text-dark" href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+                    </h5>
+                    <p>It is a long established fact that a reader will be distracted by the 
+                      readable content of a page when looking at its layout.                      
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </section>
+          </div>
+
+        </div>
+        
+      </div>
+
+      <div class="row" id="row__magazine">                
+        <!--magazine - start-->
+        <section class="mx-2 mt-md-5 row">
+          <header class="mt-3 bod-bot">
+            <h4 class="mag text-nowrap mb-2 d-flex justify-content-center">
+              <span class="magazine float-start"></span>Na revista
+            </h4>
+          </header>  
+
+          <div class="gray w-100 d-md-none"><br /></div>
+          <div class="row">
+            <div class="col-md-3 col-lg-3 px-3 py-3">
+              <div class="position-relative text-center">                
+                <a href="#"><img src="./img/magazine-cover.jpeg" alt="..." class="img-1 img-fluid"/></a>
+                <div class="position-absolute ml-4 bottom-0 start-10 bg-light1">
+                  <span class="w-100 text-center fw-bold text-nowrap issue">
+                    &nbsp; Emissão 02 de Janeiro &nbsp; &nbsp;
+                  </span>
+                </div>
+              </div>
+              <a href="#" class="bg-light nav-link text-uppercase text-dark fw-bold text-center issue mb-md-3 text-nowrap">
+                Revista digital
+              </a>
+            </div>
+
+            <div class="col-md-3 col-lg-3">
+              <div class="mb-2 text-center">
+                <a href="#"><img src="./img/magazine1.jpeg" alt="..."/></a>
+              </div>
+              <div>
+                <h5 class="fw-bold otext">
+                  <span class="first-header text-white">Noticias</span>
+                  <a href="#" class="text-decoration-none otext"> De Capa</a>
+                </h5>
+                <p>
+                  <a href="#" class="link-dark nav-link fw-bold">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  </a>
+                </p>
+              </div>
+            </div>
+            <div class="col-md-3 col-lg-3">
+              <div class="mb-2 text-center">
+                <a href="#"><img src="./img/magazine2.jpeg" alt="..."/></a>
+              </div>
+              <div>
+                <h5 class="fw-bold otext">
+                  <span class="first-header text-white">Noticias</span>
+                  <a href="#" class="text-decoration-none otext"> Do Mundo</a>
+                </h5>
+                <p>
+                  <a href="#" class="link-dark nav-link fw-bold">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  </a>
+                </p>
+              </div>
+            </div>
+            <div class="col-md-3 col-lg-3">
+              <div class="mb-2 text-center">
+                <a href="#"><img src="./img/magazine3.jpeg" alt="..."/></a>
+              </div>
+              <div>
+                <h5 class="fw-bold otext">
+                  <span class="first-header text-white">Noticias</span>
+                  <a href="#" class="text-decoration-none otext"> Cultura</a>
+                </h5>
+                <p>
+                  <a href="#" class="link-dark nav-link fw-bold">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  </a>
+                </p>
+              </div>
+            </div>
+            <div class="col-md-3 col-lg-3">
+              <div class="mb-2 text-center">
+                <a href="#"><img src="./img/magazine4.jpeg" alt="..."/></a>
+              </div>
+              <div>
+                <h5 class="fw-bold otext">
+                  <span class="first-header text-white">Noticias</span>
+                  <a href="#" class="text-decoration-none otext"> Cultura</a>
+                </h5>
+                <p>
+                  <a href="#" class="text-dark nav-link fw-bold">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  </a>
+                </p>
+              </div>
+            </div>
+            <div class="col-md-3 col-lg-3">
+              <div class="mb-2 text-center">
+                <a href="#"><img src="./img/magazine5.jpeg" alt="..."/></a>
+              </div>
+              <div>
+                <h5 class="fw-bold otext">
+                  <span class="first-header text-white">Noticias</span
+                  ><a href="#" class="text-decoration-none otext"> Opinião</a>
+                </h5>
+                <p>
+                  <a href="#" class="text-dark nav-link fw-bold">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  </a>
+                </p>
+              </div>
+            </div>
+            <div class="col-md-3 col-lg-3">
+              <div class="mb-2 text-center">
+                <a href="#"><img src="./img/magazine6.jpeg" alt="..."/></a>
+              </div>
+              <div>
+                <h5 class="fw-bold otext">
+                  <span class="first-header text-white">Noticias</span
+                  ><a href="#" class="text-decoration-none otext"> Culinária</a>
+                </h5>
+                <p>
+                  <a href="#" class="link-dark nav-link fw-bold">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  </a>
+                </p>
+              </div>
+            </div>
+            <div class="col-md-3 col-lg-3">
+              <div class="mb-2 text-center">
+                <a href="#"><img src="./img/magazine7.jpeg" alt="..."/></a>
+              </div>              
+              <div>
+                <h5 class="fw-bold otext">
+                  <span class="first-header text-white">Noticias</span>
+                  <a href="#" class="text-decoration-none otext"> Cultura</a>
+                </h5>
+                <p>
+                  <a href="#" class="link-dark nav-link fw-bold">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section><!--magazine - end--->
+
+        <div class="gray w-100 d-md-none"><br /></div>  
+
+        <!--Sport -start-->
+        <section class="mt-3 mx-2 border-1 border-bottom row">
+          <header><h5 class="otext fw-bold color-red">Esportes</h5></header>
+          <div class="mb-3 col-md-4">
+            <div class="mb-2 text-center">
+              <a href="#"><img src="./img/news-sport1.jpeg" alt="..."/></a>
+            </div>
+            <div>
+              <h5 class="fw-bold otext">
+                <a href="#" class="nav-link fw-bold link-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </a>
+              </h5>
+            </div>
+          </div>
+
+          <div class="mb-2 col-md-4">
+            <div class="mb-2 text-center">
+              <a href="#"><img src="./img/news-sport2.jpeg" alt="..."/></a>
+            </div>
+            <div>
+              <h5 class="fw-bold otext">
+                <a href="#" class="nav-link fw-bold link-dark">Proin quam arcu, tempor ac venenatis quis, mattis eget magna.</a>
+              </h5>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <article class="mb-3 py-2 pt-md-0">
+              <div class="float-start text-center">
+                <a href="#"><img src="./img/news-sport3.jpeg" class="img-fluid swidth me-3" alt="..."/></a>
+              </div>
+              <div class="clearfix">
+                <h5>
+                  <a href="#" class="link-dark nav-link fw-bold font-size">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+                </h5>
+              </div>
+            </article>
+
+            <article class="mb-3 py-2">
+              <div class="float-start text-center">
+                <a href="#"><img src="./img/news-sport4.jpeg" class="img-fluid swidth me-3" alt="..."/></a>
+              </div>
+              <div class="clearfix">
+                <h5>
+                  <a href="#" class="link-dark nav-link fw-bold font-size">Sed auctor quam a malesuada aliquet.</a>
+                </h5>
+              </div>
+            </article>
+
+            <article class="mb-3 py-2">
+              <div class="float-start text-center">
+                <a href="#"><img src="./img/news-sport5.jpeg" class="img-fluid swidth me-3" alt="..."/></a>
+              </div>
+              <div class="clearfix">
+                <h5>
+                  <a href="#" class="link-dark nav-link fw-bold font-size">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Sed auctor quam a malesuada aliquet.
+                  </a>
+                </h5>
+              </div>
+            </article>
+          </div>
+        </section> <!--Sport - end-->
+
+        <!--World - start-->
+        <section class="mt-3 mx-2 border-1 border-bottom row">
+          <header><h5 class="otext fw-bold color-red">Mundo</h5></header>
+          
+          <div class="mb-3 col-md-4">
+            <div class="mb-2 text-center">
+              <a href="#"><img src="./img/news-world1.jpeg" alt="..."/></a>
+            </div>
+            <div>
+              <h5 class="fw-bold otext">
+                <a href="#" class="nav-link fw-bold link-dark">
+                  Cras ornare lacus velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
+                </a>
+              </h5>
+            </div>
+          </div>
+
+          <div class="mb-2 col-md-4">
+            <div class="mb-2 text-center">
+              <a href="#"><img src="./img/news-world2.jpeg" alt="..."/></a>
+            </div>
+            <div>
+              <h5 class="fw-bold otext">
+                <a href="#" class="nav-link fw-bold link-dark">Nunc risus leo, eleifend nec elit in, congue mattis lorem ipsum.</a>
+              </h5>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <article class="mb-3 py-2">
+              <div class="float-start text-center">
+                <a href="#"><img src="./img//news-world3.jpeg" class="img-fluid swidth me-3" alt="..."/></a>
+              </div>
+              <div class="clearfix">
+                <h5>
+                  <a href="#" class="link-dark nav-link fw-bold font-size">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+                </h5>
+              </div>
+            </article>
+
+            <article class="mb-3 py-2">
+              <div class="float-start text-center">
+                <a href="#"><img src="./img//news-world4.jpeg" class="img-fluid swidth me-3" alt="..."/></a>
+              </div>
+              <div class="clearfix">
+                <h5>
+                  <a href="#" class="link-dark nav-link fw-bold font-size">
+                    Nunc risus leo, eleifend nec elit in, congue mattis lorem. Curabitur vulputate.
+                  </a>
+                </h5>
+              </div>
+            </article>
+
+            <article class="mb-3 py-2">
+              <div class="float-start text-center">
+                <a href="#"><img src="./img/news-world5.jpeg" class="img-fluid swidth me-3" alt="..."/></a>
+              </div>
+              <div class="clearfix">
+                <h5>
+                  <a href="#" class="link-dark nav-link fw-bold font-size">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor quam a malesuada aliquet. 
+                  </a>
+                </h5>
+              </div>
+            </article>
+          </div>
+        </section> <!--World - end-->
+
+        <!--Business - start-->
+        <section class="mt-3 mx-2 border-1 border-bottom row">
+          <header><h5 class="otext fw-bold color-red">Negócios</h5></header>
+
+          <div class="mb-3 col-md-4">
+            <div class="mb-2 text-center">
+              <a href="#"><img src="./img//news-business1.jpeg" alt="..."/></a>
+            </div>
+            <div>
+              <h5 class="fw-bold otext">
+                <a href="#" class="nav-link fw-bold link-dark">
+                  Phasellus at enim eu dui fringilla sollicitudin. Nam felis nisl, viverra nec dictum vel. 
+                </a>
+              </h5>
+            </div>
+          </div>
+
+          <div class="mb-2 col-md-4">
+            <div class="mb-2 text-center">
+              <a href="#"><img src="./img/news-business2.jpeg" alt="..."/></a>
+            </div>
+            <div>
+              <h5 class="fw-bold otext">
+                <a href="#" class="nav-link fw-bold link-dark" >Proin quam arcu, tempor ac venenatis quis, mattis eget magna.</a>
+              </h5>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <article class="mb-3 py-2">
+              <div class="float-start text-center">
+                <a href="#"><img src="./img/news-business3.jpeg" class="img-fluid swidth me-3" alt="..."/></a>
+              </div>
+              <div class="clearfix">
+                <h5>
+                  <a href="#" class="link-dark nav-link fw-bold font-size">
+                    Curabitur vulputate, lacus vel lacinia pellentesque, nisl libero dapibus turpis.
+                  </a>
+                </h5>
+              </div>
+            </article>
+
+            <article class="mb-3 py-2">
+              <div class="float-start text-center">
+                <a href="#"><img src="./img/news-business4.jpeg" class="img-fluid swidth me-3" alt="..."/></a>
+              </div>
+              <div class="clearfix">
+                <h5>
+                  <a href="#" class="link-dark nav-link fw-bold font-size">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </a>
+                </h5>
+              </div>
+            </article>
+
+            <article class="mb-3 py-2">
+              <div class="float-start text-center">
+                <a href="#"><img src="./img/news-business5.jpeg" class="img-fluid swidth me-3" alt="..."/></a>
+              </div>
+              <div class="clearfix">
+                <h5>
+                  <a href="#" class="link-dark nav-link fw-bold font-size">
+                    Integer aliquet condimentum ullamcorper. Proin quam arcu, tempor ac venenatis.
+                  </a>
+                </h5>
+              </div>
+            </article>
+          </div>
+        </section> <!--Business - end-->
+
+        <!--Tech & Science - start-->
+        <section class="mt-3 mx-2 border-1 border-bottom row">
+          <header><h5 class="otext fw-bold color-red">Tecnologia e Ciência</h5></header>
+
+          <div class="mb-3 col-md-4">
+            <div class="mb-2 text-center">
+              <a href="#"><img src="./img/news-tech-science1.jpeg" alt="..."/></a>
+            </div>
+            <div>
+              <h5 class="fw-bold otext">
+                <a href="#" class="nav-link fw-bold link-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+              </h5>
+            </div>
+          </div>
+
+          <div class="mb-2 col-md-4">
+            <div class="mb-2 text-center">
+              <a href="#"><img src="./img/news-tech-science2.jpeg" alt="..."/></a>
+            </div>
+            <div>
+              <h5 class="fw-bold otext">
+                <a href="#" class="nav-link fw-bold link-dark">
+                  Vivamus nec condimentum turpis. Aliquam et massa porta.
+                </a>
+              </h5>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <article class="mb-3 py-2">
+              <div class="float-start text-center">
+                <a href="#"><img src="./img//news-tech-science3.jpeg" class="img-fluid swidth me-3" alt="..."/></a>
+              </div>
+              <div class="clearfix">
+                <h5>
+                  <a href="#" class="link-dark nav-link fw-bold font-size">
+                    Phasellus at enim eu dui fringilla sollicitudin. Nam felis nisl, viverra nec dictum vel.
+                  </a>
+                </h5>
+              </div>
+            </article>
+
+            <article class="mb-3 py-2">
+              <div class="float-start text-center">
+                <a href="#"><img src="./img/news-tech-science4.jpeg" class="img-fluid swidth me-3" alt="..."/></a>
+              </div>
+              <div class="clearfix">
+                <h5>
+                  <a href="#" class="link-dark nav-link fw-bold font-size">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                  </a>
+                </h5>
+              </div>
+            </article>
+
+            <article class="mb-3 py-2">
+              <div class="float-start text-center">
+                <a href="#"><img src="./img/news-tech-science5.jpeg" class="img-fluid swidth me-3" alt="..."/></a>
+              </div>
+              <div class="clearfix">
+                <h5>
+                  <a href="#" class="link-dark nav-link fw-bold font-size">Integer aliquet condimentum ullamcorper.</a>
+                </h5>
+              </div>
+            </article>
+          </div>
+        </section> <!--Tech & Science - end-->
+
+        <!--Culture- start -->
+        <section class="mt-3 mx-2 border-1 border-bottom row">
+          <header><h5 class="otext fw-bold color-red">Cultura</h5></header>
+          <div class="mb-3 col-md-4">
+            <div class="mb-2 text-center">
+              <a href="#"><img src="./img/news-cultura1.jpeg" alt="..."/></a>
+            </div>
+            <div>
+              <h5 class="fw-bold otext">
+                <a href="#" class="nav-link fw-bold link-dark">Nunc risus leo, eleifend nec elit in, congue mattis lorem</a>
+              </h5>
+            </div>
+          </div><!--Culture- end -->
+
+          <div class="mb-2 col-md-4">
+            <div class="mb-2 text-center">
+              <a href="#"><img src="./img/news-cultura2.jpeg" alt="..."/></a>
+            </div>
+            <div>
+              <h5 class="fw-bold otext">
+                <a href="#" class="nav-link fw-bold link-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+              </h5>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <article class="mb-3 py-2">
+              <div class="float-start text-center">
+                <a href="#"><img src="./img/news-cultura3.jpeg" class="img-fluid swidth me-3" alt="..."/></a>
+              </div>
+              <div class="clearfix">
+                <h5>
+                  <a href="#" class="link-dark nav-link fw-bold font-size">Integer aliquet condimentum ullamcorper.</a>
+                </h5>
+              </div>
+            </article>
+
+            <article class="mb-3 py-2">
+              <div class="float-start text-center">
+                <a href="#"><img src="./img/news-cultura4.jpeg" class="img-fluid swidth me-3" alt="..."/></a>
+              </div>
+              <div class="clearfix">
+                <h5>
+                  <a href="#" class="link-dark nav-link fw-bold font-size">Nunc risus leo, eleifend nec elit in, congue mattis lorem ipsum.</a>
+                </h5>
+              </div>
+            </article>
+
+            <article class="mb-3 py-2">
+              <div class="float-start text-center">
+                <a href="#"><img src="./img/news-cultura5.jpeg" class="img-fluid swidth me-3" alt="..."/></a>
+              </div>
+              <div class="clearfix">
+                <h5>
+                  <a href="#" class="link-dark nav-link fw-bold font-size">Cras ornare lacus velit. Class aptent taciti sociosqu.</a>
+                </h5>
+              </div>
+            </article>
+
+          </div>
+        </section>          
+      </div>
+    </main>
+
+    <footer>   
+      <div class="footer__container">
+        <nav class="footer__menu">
+          <ul class="list-unstyled footer_m">
+            <li><a href="#" class="nav-r-line">@2021 Copyright</a></li>
+            <li><a href="#" class="nav-r-line">Noticias da Semana</a></li>
+            <li><a href="#" class="nav-r-line">Contato</a></li>
+            <li><a href="#" class="nav-r-line">Privacidade</a></li>
+            <li><a href="#" class="nav-r-line">Termos</a></li>    
+            <li><a href="https://github.com/camila-github" class="nav-r-line">Desenvolvido por Camila Santos</a></li>    
+        </nav>
+      </div>
+    </footer>   
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>    
+    <script src="https://kit.fontawesome.com/a6b5a8efdf.js" crossorigin="anonymous"></script>
+    <script>document.getElementById("date").innerHTML = new Date().toLocaleString();</script>
+    <script>
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("btn__main").style.marginLeft = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("btn__main").style.marginLeft= "0";
+      }
+    </script>
+
+  </body>
+</html>
