@@ -17,6 +17,7 @@
   [https://getbootstrap.com.br/](https://getbootstrap.com.br/)
 
 - CSS3
+- 
   [https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox](https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)
 
 
@@ -34,9 +35,9 @@
 
 ## Site publicado no link abaixo:
 
-[https://camila-github.github.io/projeto-bootstrap-responsive/](https://camila-github.github.io/projeto-bootstrap-responsive/)
+  [https://camila-github.github.io/projeto-bootstrap-responsive/](https://camila-github.github.io/projeto-bootstrap-responsive/)
 
 ## Vídeo de demonstração do aplicativo
 
-![Video](https://github.com/camila-github/projeto-bootstrap-responsive/blob/main/docs/video1.gif)
+  ![Video](https://github.com/camila-github/projeto-bootstrap-responsive/blob/main/docs/video1.gif)
 
