@@ -28,6 +28,9 @@
 - Referencia para o projeto::
 [https://web.archive.org/web/20210120125445/https://www.newsweek.com/](https://web.archive.org/web/20210120125445/https://www.newsweek.com/)
 
+##vSite publicado no link abaixo:
+[https://camila-github.github.io/projeto-bootstrap-responsive/](https://camila-github.github.io/projeto-bootstrap-responsive/)
+
 ## Vídeo de demonstração do aplicativo
 
 ![Video](https://github.com/camila-github/projeto-bootstrap-responsive/blob/main/docs/video1.gif)
