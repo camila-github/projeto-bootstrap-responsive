@@ -30,7 +30,7 @@
 
 ## Vídeo de demonstração do aplicativo
 
-![Video]( )
+![Video](https://github.com/camila-github/projeto-bootstrap-responsive/blob/main/docs/video1.gif)
 
 
-![Video]( )
+![Video](https://github.com/camila-github/projeto-bootstrap-responsive/blob/main/docs/video2.gif)
