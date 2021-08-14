@@ -9,6 +9,7 @@
 - Bootstrap 5
 - Fontawesome (Biblioteca de Icones)
 - Pexels.com (Site com imagens que foi utilizado no projeto)
+- Netlify (Utilizado para fazer o deploy do site).
 
 ## Links de referencia:
 
