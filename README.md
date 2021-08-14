@@ -36,6 +36,10 @@
 ## Site publicado no link abaixo:
 
   [https://camila-github.github.io/projeto-bootstrap-responsive/](https://camila-github.github.io/projeto-bootstrap-responsive/)
+  
+  ou
+  
+  [https://projeto-bootstrap-responsive.netlify.app/](https://projeto-bootstrap-responsive.netlify.app/)
 
 ## Vídeo de demonstração do aplicativo
 
