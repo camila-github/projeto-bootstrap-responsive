@@ -44,5 +44,11 @@
 
 ## Vídeo de demonstração do aplicativo
 
-  ![Video](https://github.com/camila-github/projeto-bootstrap-responsive/blob/main/docs/video1.gif)
+<p align="center">
+   <img 
+         src="https://github.com/camila-github/projeto-bootstrap-responsive/blob/main/docs/video1.gif?raw=true" 
+     />
+</p>
+
+
 
